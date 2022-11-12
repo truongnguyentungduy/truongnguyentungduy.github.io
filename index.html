@@ -6,11 +6,9 @@
     <title>Tường Vy</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <!-- /* -->
     <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
-    <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 100%; height: 100%"></canvas>
-    </div>
-    <!-- */ -->
+      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 100%; height: 100%"></canvas>
+      </div>
     <script src="Build/vy.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -29,9 +27,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/vy.data.gz",
-        frameworkUrl: "Build/vy.framework.js.gz",
-        codeUrl: "Build/vy.wasm.gz",
+        dataUrl: "Build/vy.data",
+        frameworkUrl: "Build/vy.framework.js",
+        codeUrl: "Build/vy.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "vy",
         productName: "vy",
